@@ -2,7 +2,7 @@
 //0, 7, 8, -2, -2 -> 2
 //1, -7, 567, 89, 223-> 3
 
-Console.Write("Введите количество элементов массива: ");
+
 int m = Convert.ToInt32(Console.ReadLine());
 int[] Array = new int[m];
 void CreateArray(int m)
@@ -26,6 +26,7 @@ int QuantityPositiveNumbers(int[] Array)
     return sum;
 }
 CreateArray(m);
+Console.Write("Введите количество элементов массива: ");
 Console.Write($"Количество чисел больше нуля: { QuantityPositiveNumbers(Array)}");
 
 
